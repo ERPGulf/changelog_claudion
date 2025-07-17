@@ -4,7 +4,7 @@ from werkzeug.wrappers import Response, Request
 import json
 
 
-@frappe.whitelist(allow_guest=True)  # pylint: disable=no-member
+@frappe.whitelist(allow_guest=False)  # pylint: disable=no-member
 def log_claudion():
     """
     Logs a message and returns all log entries with their tag details.
