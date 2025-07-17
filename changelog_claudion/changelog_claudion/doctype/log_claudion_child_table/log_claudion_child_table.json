@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-17 16:03:12.298476",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tags"
+ ],
+ "fields": [
+  {
+   "fieldname": "tags",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tags",
+   "options": "security\nupdate\nperformance\noptimization\nbugfix\nmaintenance\nfeatures\nrelease\ninitial"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-17 16:15:10.883913",
+ "modified_by": "Administrator",
+ "module": "changelog_claudion",
+ "name": "log claudion child table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

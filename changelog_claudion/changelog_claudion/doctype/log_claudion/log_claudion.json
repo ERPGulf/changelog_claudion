@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-17 15:57:25.280931",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "date",
+  "description",
+  "image",
+  "video",
+  "tag"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "title"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "image"
+  },
+  {
+   "fieldname": "video",
+   "fieldtype": "Attach",
+   "label": "video"
+  },
+  {
+   "fieldname": "tag",
+   "fieldtype": "Table",
+   "label": "Tag",
+   "options": "log claudion child table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-17 16:05:40.772418",
+ "modified_by": "Administrator",
+ "module": "changelog_claudion",
+ "name": "log claudion",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
