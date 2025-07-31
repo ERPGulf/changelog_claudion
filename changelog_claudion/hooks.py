@@ -16,10 +16,17 @@ app_license = "mit"
 # ]
 
 
+# app_include_js = [
+#   "public/js/changelog_claudion/changelog.js",
+# ]
+# app_include_js = [
+#     "changelog_claudion.bundle.js",
+# ]
 app_include_js = [
   "public/js/changelog_claudion/changelog_app.js",
   "https://unpkg.com/vue@3.4.21/dist/vue.global.prod.js"
 ]
+# app_include_js = "/assets/changelog_claudion/js/changelog_claudion/changelog.js"
 
 # Apps
 # ------------------
@@ -57,6 +64,9 @@ app_include_js = [
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
+# page_js = {
+#     "changelog": "public/js/changelog_claudion/changelog.js"
+# }
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
