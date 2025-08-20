@@ -5,6 +5,9 @@ app_description = "changelog_claudion"
 app_email = "asithara@htsqatar"
 app_license = "mit"
 
+website_route_rules = [
+    {"from_route": "/logger", "to_route": "logger"},
+]
 
 
 # app_include_js = [
@@ -22,10 +25,6 @@ app_license = "mit"
 # app_include_js = [
 #     "changelog_claudion.bundle.js",
 # ]
-app_include_js = [
-  "public/js/changelog_claudion/changelog_app.js",
-  "https://unpkg.com/vue@3.4.21/dist/vue.global.prod.js"
-]
 # app_include_js = "/assets/changelog_claudion/js/changelog_claudion/changelog.js"
 
 # Apps
@@ -268,3 +267,6 @@ app_include_js = [
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"dt": "Custom Field", "filters": {"module": "changelog_claudion"}},
+]
