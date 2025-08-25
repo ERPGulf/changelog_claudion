@@ -279,20 +279,37 @@ const Changelog = () => {
           </div>
         )}
       </div>
-      <div className="flex  justify-between text-gray-500 text-sm mt-8 border-t border-gray-100  p-4">
-        <div className='flex flex-col sm:flex-row items-center gap-2'>
-          <img src={headerData.logo} alt="Logo" className="h-6 inline-block mr-2" />
-          <span>© {new Date().getFullYear()} {headerData.title}</span>
+      <footer className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-10">
+        <div className="max-w-4xl mx-auto px-4 py-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              <p className="text-sm text-gray-600">
+                &copy; {new Date().getFullYear()} {headerData.title}. All rights reserved.
+              </p>
+            </div>
+            <div className="flex items-center space-x-4">
+              <a
+                href={headerData.link}
+                className="text-sm text-blue-600 hover:text-blue-800 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Website
+              </a>
+              <a
+                href="#"
+                className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              >
+                Back to Top
+              </a>
+            </div>
+          </div>
         </div>
-        <div>
-          <a
-            href={`mailto:${headerData.email}`}
-            className="text-blue-600 hover:text-blue-800 transition-colors"
-          >
-            Contact Us
-          </a>
-        </div>
-      </div>
+      </footer>
     </div>
   );
 };
