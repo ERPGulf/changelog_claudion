@@ -25,7 +25,7 @@ frappe.dom.set_style("/* sfc-style:/opt/alw/frappe-bench/apps/changelog_claudion
     mod
   ));
 
-  // ../changelog_claudion/node_modules/@vue/shared/dist/shared.esm-bundler.js
+  // ../../../node_modules/@vue/shared/dist/shared.esm-bundler.js
   function makeMap(str) {
     const map2 = /* @__PURE__ */ Object.create(null);
     for (const key of str.split(","))
@@ -84,7 +84,7 @@ frappe.dom.set_style("/* sfc-style:/opt/alw/frappe-bench/apps/changelog_claudion
   }
   var EMPTY_OBJ, EMPTY_ARR, NOOP, NO, isOn, isModelListener, extend, remove, hasOwnProperty2, hasOwn, isArray, isMap, isSet, isFunction, isString, isSymbol, isObject, isPromise, objectToString, toTypeString, toRawType, isPlainObject, isIntegerKey, isReservedProp, isBuiltInDirective, cacheStringFunction, camelizeRE, camelize, hyphenateRE, hyphenate, capitalize, toHandlerKey, hasChanged, invokeArrayFns, def, looseToNumber, _globalThis, getGlobalThis, listDelimiterRE, propertyDelimiterRE, styleCommentRE, HTML_TAGS, SVG_TAGS, MATH_TAGS, isHTMLTag, isSVGTag, isMathMLTag, specialBooleanAttrs, isSpecialBooleanAttr, isBooleanAttr, isRef, toDisplayString, replacer, stringifySymbol;
   var init_shared_esm_bundler = __esm({
-    "../changelog_claudion/node_modules/@vue/shared/dist/shared.esm-bundler.js"() {
+    "../../../node_modules/@vue/shared/dist/shared.esm-bundler.js"() {
       EMPTY_OBJ = true ? Object.freeze({}) : {};
       EMPTY_ARR = true ? Object.freeze([]) : [];
       NOOP = () => {
@@ -222,7 +222,7 @@ frappe.dom.set_style("/* sfc-style:/opt/alw/frappe-bench/apps/changelog_claudion
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
+  // ../../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
   function warn(msg, ...args) {
     console.warn(`[Vue warn] ${msg}`, ...args);
   }
@@ -1158,7 +1158,7 @@ frappe.dom.set_style("/* sfc-style:/opt/alw/frappe-bench/apps/changelog_claudion
   }
   var activeEffectScope, EffectScope, activeSub, pausedQueueEffects, ReactiveEffect, batchDepth, batchedSub, batchedComputed, shouldTrack, trackStack, globalVersion, Link, Dep, targetMap, ITERATE_KEY, MAP_KEY_ITERATE_KEY, ARRAY_ITERATE_KEY, arrayInstrumentations, arrayProto, isNonTrackableKeys, builtInSymbols, BaseReactiveHandler, MutableReactiveHandler, ReadonlyReactiveHandler, mutableHandlers, readonlyHandlers, shallowReactiveHandlers, shallowReadonlyHandlers, toShallow, getProto, mutableCollectionHandlers, shallowCollectionHandlers, readonlyCollectionHandlers, shallowReadonlyCollectionHandlers, reactiveMap, shallowReactiveMap, readonlyMap, shallowReadonlyMap, toReactive, toReadonly, shallowUnwrapHandlers, ComputedRefImpl, INITIAL_WATCHER_VALUE, cleanupMap, activeWatcher;
   var init_reactivity_esm_bundler = __esm({
-    "../changelog_claudion/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js"() {
+    "../../../node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js"() {
       init_shared_esm_bundler();
       EffectScope = class {
         constructor(detached = false) {
@@ -1782,7 +1782,7 @@ frappe.dom.set_style("/* sfc-style:/opt/alw/frappe-bench/apps/changelog_claudion
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+  // ../../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
   function pushWarningContext(vnode) {
     stack.push(vnode);
   }
@@ -6548,7 +6548,7 @@ Component that was made reactive: `,
   }
   var stack, isWarning, ErrorTypeStrings$1, queue, flushIndex, pendingPostFlushCbs, activePostFlushCbs, postFlushIndex, resolvedPromise, currentFlushPromise, RECURSION_LIMIT, getId, isHmrUpdating, hmrDirtyComponents, map, devtools$1, buffer, devtoolsNotInstalled, devtoolsComponentAdded, devtoolsComponentUpdated, _devtoolsComponentRemoved, devtoolsComponentRemoved, devtoolsPerfStart, devtoolsPerfEnd, currentRenderingInstance, currentScopeId, TeleportEndKey, isTeleport, leaveCbKey, enterCbKey, knownTemplateRefs, requestIdleCallback, cancelIdleCallback, isAsyncWrapper, isKeepAlive, createHook, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onBeforeUnmount, onUnmounted, onServerPrefetch, onRenderTriggered, onRenderTracked, NULL_DYNAMIC_COMPONENT, getPublicInstance, publicPropertiesMap, isReservedPrefix, hasSetupBinding, PublicInstanceProxyHandlers, shouldCacheAccess, internalOptionMergeStrats, uid$1, currentApp, internalObjectProto, createInternalObject, isInternalObject, mixinPropsCache, isSimpleType, isInternalKey, normalizeSlotValue, normalizeSlot, normalizeObjectSlots, normalizeVNodeSlots, assignSlots, initSlots, updateSlots, supported, perf, queuePostRenderEffect, ssrContextKey, useSSRContext, getModelModifiers, accessedAttrs, getChildRoot, getFunctionalFallthrough, filterModelListeners, isElementRoot, isSuspense, Fragment, Text, Comment, Static, blockStack, currentBlock, isBlockTreeEnabled, vnodeArgsTransformer, createVNodeWithArgsTransform, normalizeKey, normalizeRef, createVNode, emptyAppContext, uid, currentInstance, getCurrentInstance, internalSetCurrentInstance, setInSSRSetupState, setCurrentInstance, unsetCurrentInstance, isBuiltInTag, isInSSRComponentSetup, compile, installWithProxy, isRuntimeOnly, attrsProxyHandlers, classifyRE, classify, computed2, version, warn2;
   var init_runtime_core_esm_bundler = __esm({
-    "../changelog_claudion/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js"() {
+    "../../../node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js"() {
       init_reactivity_esm_bundler();
       init_shared_esm_bundler();
       init_shared_esm_bundler();
@@ -7113,7 +7113,7 @@ Component that was made reactive: `,
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
+  // ../../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
   function patchClass(el, value, isSVG) {
     const transitionClasses = el[vtcKey];
     if (transitionClasses) {
@@ -7467,7 +7467,7 @@ Expected function or array of functions, received type ${typeof value}.`
   }
   var policy, tt, unsafeToTrustedHTML, svgNS, mathmlNS, doc, templateContainer, nodeOps, vtcKey, vShowOriginalDisplay, vShowHidden, vShow, CSS_VAR_TEXT, displayRE, semicolonRE, importantRE, prefixes, prefixCache, xlinkNS, veiKey, optionsModifierRE, cachedNow, p, getNow, isNativeOn, patchProp, moveCbKey, enterCbKey2, assignKey, rendererOptions, renderer, createApp;
   var init_runtime_dom_esm_bundler = __esm({
-    "../changelog_claudion/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js"() {
+    "../../../node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js"() {
       init_runtime_core_esm_bundler();
       init_runtime_core_esm_bundler();
       init_shared_esm_bundler();
@@ -7660,14 +7660,14 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/vue/dist/vue.runtime.esm-bundler.js
+  // ../../../node_modules/vue/dist/vue.runtime.esm-bundler.js
   function initDev() {
     {
       initCustomFormatter();
     }
   }
   var init_vue_runtime_esm_bundler = __esm({
-    "../changelog_claudion/node_modules/vue/dist/vue.runtime.esm-bundler.js"() {
+    "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js"() {
       init_runtime_dom_esm_bundler();
       init_runtime_dom_esm_bundler();
       if (true) {
@@ -7806,9 +7806,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/shared/dist/shared.cjs.js
+  // ../../../node_modules/@vue/shared/dist/shared.cjs.js
   var require_shared_cjs = __commonJS({
-    "../changelog_claudion/node_modules/@vue/shared/dist/shared.cjs.js"(exports) {
+    "../../../node_modules/@vue/shared/dist/shared.cjs.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       function makeMap2(str) {
@@ -8404,9 +8404,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/shared/index.js
+  // ../../../node_modules/@vue/shared/index.js
   var require_shared = __commonJS({
-    "../changelog_claudion/node_modules/@vue/shared/index.js"(exports, module) {
+    "../../../node_modules/@vue/shared/index.js"(exports, module) {
       "use strict";
       if (false) {
         module.exports = null;
@@ -8416,9 +8416,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/entities/lib/generated/decode-data-html.js
+  // ../../../node_modules/entities/lib/generated/decode-data-html.js
   var require_decode_data_html = __commonJS({
-    "../changelog_claudion/node_modules/entities/lib/generated/decode-data-html.js"(exports) {
+    "../../../node_modules/entities/lib/generated/decode-data-html.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       exports.default = new Uint16Array(
@@ -8429,9 +8429,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/entities/lib/generated/decode-data-xml.js
+  // ../../../node_modules/entities/lib/generated/decode-data-xml.js
   var require_decode_data_xml = __commonJS({
-    "../changelog_claudion/node_modules/entities/lib/generated/decode-data-xml.js"(exports) {
+    "../../../node_modules/entities/lib/generated/decode-data-xml.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       exports.default = new Uint16Array(
@@ -8442,9 +8442,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/entities/lib/decode_codepoint.js
+  // ../../../node_modules/entities/lib/decode_codepoint.js
   var require_decode_codepoint = __commonJS({
-    "../changelog_claudion/node_modules/entities/lib/decode_codepoint.js"(exports) {
+    "../../../node_modules/entities/lib/decode_codepoint.js"(exports) {
       "use strict";
       var _a;
       Object.defineProperty(exports, "__esModule", { value: true });
@@ -8504,9 +8504,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/entities/lib/decode.js
+  // ../../../node_modules/entities/lib/decode.js
   var require_decode = __commonJS({
-    "../changelog_claudion/node_modules/entities/lib/decode.js"(exports) {
+    "../../../node_modules/entities/lib/decode.js"(exports) {
       "use strict";
       var __createBinding = exports && exports.__createBinding || (Object.create ? function(o, m, k, k2) {
         if (k2 === void 0)
@@ -8860,9 +8860,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/@babel/parser/lib/index.js
+  // ../../../node_modules/@babel/parser/lib/index.js
   var require_lib = __commonJS({
-    "../changelog_claudion/node_modules/@babel/parser/lib/index.js"(exports) {
+    "../../../node_modules/@babel/parser/lib/index.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", {
         value: true
@@ -23628,9 +23628,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/estree-walker/dist/umd/estree-walker.js
+  // ../../../node_modules/@vue/compiler-core/node_modules/estree-walker/dist/umd/estree-walker.js
   var require_estree_walker = __commonJS({
-    "../changelog_claudion/node_modules/estree-walker/dist/umd/estree-walker.js"(exports, module) {
+    "../../../node_modules/@vue/compiler-core/node_modules/estree-walker/dist/umd/estree-walker.js"(exports, module) {
       (function(global2, factory) {
         typeof exports === "object" && typeof module !== "undefined" ? factory(exports) : typeof define === "function" && define.amd ? define(["exports"], factory) : (global2 = global2 || self, factory(global2.estreeWalker = {}));
       })(exports, function(exports2) {
@@ -23824,9 +23824,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/base64.js
+  // ../../../node_modules/source-map-js/lib/base64.js
   var require_base64 = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/base64.js"(exports) {
+    "../../../node_modules/source-map-js/lib/base64.js"(exports) {
       var intToCharMap = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".split("");
       exports.encode = function(number) {
         if (0 <= number && number < intToCharMap.length) {
@@ -23865,9 +23865,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/base64-vlq.js
+  // ../../../node_modules/source-map-js/lib/base64-vlq.js
   var require_base64_vlq = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/base64-vlq.js"(exports) {
+    "../../../node_modules/source-map-js/lib/base64-vlq.js"(exports) {
       var base64 = require_base64();
       var VLQ_BASE_SHIFT = 5;
       var VLQ_BASE = 1 << VLQ_BASE_SHIFT;
@@ -23919,9 +23919,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/util.js
+  // ../../../node_modules/source-map-js/lib/util.js
   var require_util = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/util.js"(exports) {
+    "../../../node_modules/source-map-js/lib/util.js"(exports) {
       function getArg(aArgs, aName, aDefaultValue) {
         if (aName in aArgs) {
           return aArgs[aName];
@@ -24299,9 +24299,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/array-set.js
+  // ../../../node_modules/source-map-js/lib/array-set.js
   var require_array_set = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/array-set.js"(exports) {
+    "../../../node_modules/source-map-js/lib/array-set.js"(exports) {
       var util = require_util();
       var has = Object.prototype.hasOwnProperty;
       var hasNativeMap = typeof Map !== "undefined";
@@ -24369,9 +24369,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/mapping-list.js
+  // ../../../node_modules/source-map-js/lib/mapping-list.js
   var require_mapping_list = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/mapping-list.js"(exports) {
+    "../../../node_modules/source-map-js/lib/mapping-list.js"(exports) {
       var util = require_util();
       function generatedPositionAfter(mappingA, mappingB) {
         var lineA = mappingA.generatedLine;
@@ -24408,9 +24408,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/source-map-generator.js
+  // ../../../node_modules/source-map-js/lib/source-map-generator.js
   var require_source_map_generator = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/source-map-generator.js"(exports) {
+    "../../../node_modules/source-map-js/lib/source-map-generator.js"(exports) {
       var base64VLQ = require_base64_vlq();
       var util = require_util();
       var ArraySet = require_array_set().ArraySet;
@@ -24701,9 +24701,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/binary-search.js
+  // ../../../node_modules/source-map-js/lib/binary-search.js
   var require_binary_search = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/binary-search.js"(exports) {
+    "../../../node_modules/source-map-js/lib/binary-search.js"(exports) {
       exports.GREATEST_LOWER_BOUND = 1;
       exports.LEAST_UPPER_BOUND = 2;
       function recursiveSearch(aLow, aHigh, aNeedle, aHaystack, aCompare, aBias) {
@@ -24757,9 +24757,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/quick-sort.js
+  // ../../../node_modules/source-map-js/lib/quick-sort.js
   var require_quick_sort = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/quick-sort.js"(exports) {
+    "../../../node_modules/source-map-js/lib/quick-sort.js"(exports) {
       function SortTemplate(comparator) {
         function swap(ary, x, y) {
           var temp = ary[x];
@@ -24806,9 +24806,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/source-map-consumer.js
+  // ../../../node_modules/source-map-js/lib/source-map-consumer.js
   var require_source_map_consumer = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/source-map-consumer.js"(exports) {
+    "../../../node_modules/source-map-js/lib/source-map-consumer.js"(exports) {
       var util = require_util();
       var binarySearch = require_binary_search();
       var ArraySet = require_array_set().ArraySet;
@@ -25451,9 +25451,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/lib/source-node.js
+  // ../../../node_modules/source-map-js/lib/source-node.js
   var require_source_node = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/lib/source-node.js"(exports) {
+    "../../../node_modules/source-map-js/lib/source-node.js"(exports) {
       var SourceMapGenerator = require_source_map_generator().SourceMapGenerator;
       var util = require_util();
       var REGEX_NEWLINE = /(\r?\n)/;
@@ -25717,18 +25717,18 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/source-map-js/source-map.js
+  // ../../../node_modules/source-map-js/source-map.js
   var require_source_map = __commonJS({
-    "../changelog_claudion/node_modules/source-map-js/source-map.js"(exports) {
+    "../../../node_modules/source-map-js/source-map.js"(exports) {
       exports.SourceMapGenerator = require_source_map_generator().SourceMapGenerator;
       exports.SourceMapConsumer = require_source_map_consumer().SourceMapConsumer;
       exports.SourceNode = require_source_node().SourceNode;
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js
+  // ../../../node_modules/@vue/compiler-core/dist/compiler-core.cjs.js
   var require_compiler_core_cjs = __commonJS({
-    "../changelog_claudion/node_modules/@vue/compiler-core/dist/compiler-core.cjs.js"(exports) {
+    "../../../node_modules/@vue/compiler-core/dist/compiler-core.cjs.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       var shared = require_shared();
@@ -32357,9 +32357,9 @@ const ${helpers.map((s) => `_${helperNameMap[s]} = ${helperNameMap[s]}`).join(",
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/compiler-core/index.js
+  // ../../../node_modules/@vue/compiler-core/index.js
   var require_compiler_core = __commonJS({
-    "../changelog_claudion/node_modules/@vue/compiler-core/index.js"(exports, module) {
+    "../../../node_modules/@vue/compiler-core/index.js"(exports, module) {
       "use strict";
       if (false) {
         module.exports = null;
@@ -32369,9 +32369,9 @@ const ${helpers.map((s) => `_${helperNameMap[s]} = ${helperNameMap[s]}`).join(",
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js
+  // ../../../node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js
   var require_compiler_dom_cjs = __commonJS({
-    "../changelog_claudion/node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js"(exports) {
+    "../../../node_modules/@vue/compiler-dom/dist/compiler-dom.cjs.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       var compilerCore = require_compiler_core();
@@ -33270,9 +33270,9 @@ const ${helpers.map((s) => `_${helperNameMap[s]} = ${helperNameMap[s]}`).join(",
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/compiler-dom/index.js
+  // ../../../node_modules/@vue/compiler-dom/index.js
   var require_compiler_dom = __commonJS({
-    "../changelog_claudion/node_modules/@vue/compiler-dom/index.js"(exports, module) {
+    "../../../node_modules/@vue/compiler-dom/index.js"(exports, module) {
       "use strict";
       if (false) {
         module.exports = null;
@@ -33282,9 +33282,9 @@ const ${helpers.map((s) => `_${helperNameMap[s]} = ${helperNameMap[s]}`).join(",
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/reactivity/dist/reactivity.cjs.js
+  // ../../../node_modules/@vue/reactivity/dist/reactivity.cjs.js
   var require_reactivity_cjs = __commonJS({
-    "../changelog_claudion/node_modules/@vue/reactivity/dist/reactivity.cjs.js"(exports) {
+    "../../../node_modules/@vue/reactivity/dist/reactivity.cjs.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       var shared = require_shared();
@@ -35129,9 +35129,9 @@ const ${helpers.map((s) => `_${helperNameMap[s]} = ${helperNameMap[s]}`).join(",
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/reactivity/index.js
+  // ../../../node_modules/@vue/reactivity/index.js
   var require_reactivity = __commonJS({
-    "../changelog_claudion/node_modules/@vue/reactivity/index.js"(exports, module) {
+    "../../../node_modules/@vue/reactivity/index.js"(exports, module) {
       "use strict";
       if (false) {
         module.exports = null;
@@ -35141,9 +35141,9 @@ const ${helpers.map((s) => `_${helperNameMap[s]} = ${helperNameMap[s]}`).join(",
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/runtime-core/dist/runtime-core.cjs.js
+  // ../../../node_modules/@vue/runtime-core/dist/runtime-core.cjs.js
   var require_runtime_core_cjs = __commonJS({
-    "../changelog_claudion/node_modules/@vue/runtime-core/dist/runtime-core.cjs.js"(exports) {
+    "../../../node_modules/@vue/runtime-core/dist/runtime-core.cjs.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       var reactivity = require_reactivity();
@@ -43524,9 +43524,9 @@ Component that was made reactive: `,
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/runtime-core/index.js
+  // ../../../node_modules/@vue/runtime-core/index.js
   var require_runtime_core = __commonJS({
-    "../changelog_claudion/node_modules/@vue/runtime-core/index.js"(exports, module) {
+    "../../../node_modules/@vue/runtime-core/index.js"(exports, module) {
       "use strict";
       if (false) {
         module.exports = null;
@@ -43536,9 +43536,9 @@ Component that was made reactive: `,
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/runtime-dom/dist/runtime-dom.cjs.js
+  // ../../../node_modules/@vue/runtime-dom/dist/runtime-dom.cjs.js
   var require_runtime_dom_cjs = __commonJS({
-    "../changelog_claudion/node_modules/@vue/runtime-dom/dist/runtime-dom.cjs.js"(exports) {
+    "../../../node_modules/@vue/runtime-dom/dist/runtime-dom.cjs.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       var runtimeCore = require_runtime_core();
@@ -45311,9 +45311,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/@vue/runtime-dom/index.js
+  // ../../../node_modules/@vue/runtime-dom/index.js
   var require_runtime_dom = __commonJS({
-    "../changelog_claudion/node_modules/@vue/runtime-dom/index.js"(exports, module) {
+    "../../../node_modules/@vue/runtime-dom/index.js"(exports, module) {
       "use strict";
       if (false) {
         module.exports = null;
@@ -45323,9 +45323,9 @@ Expected function or array of functions, received type ${typeof value}.`
     }
   });
 
-  // ../changelog_claudion/node_modules/vue/dist/vue.cjs.js
+  // ../../../node_modules/vue/dist/vue.cjs.js
   var require_vue_cjs = __commonJS({
-    "../changelog_claudion/node_modules/vue/dist/vue.cjs.js"(exports) {
+    "../../../node_modules/vue/dist/vue.cjs.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", { value: true });
       var compilerDom = require_compiler_dom();
@@ -45399,9 +45399,9 @@ ${codeFrame}` : message);
     }
   });
 
-  // ../changelog_claudion/node_modules/vue/index.js
+  // ../../../node_modules/vue/index.js
   var require_vue = __commonJS({
-    "../changelog_claudion/node_modules/vue/index.js"(exports, module) {
+    "../../../node_modules/vue/index.js"(exports, module) {
       "use strict";
       if (false) {
         module.exports = null;
@@ -45484,4 +45484,4 @@ ${codeFrame}` : message);
 * (c) 2018-present Yuxi (Evan) You and Vue contributors
 * @license MIT
 **/
-//# sourceMappingURL=changelog_claudion.bundle.5SMB4DOA.js.map
+//# sourceMappingURL=changelog_claudion.bundle.Y3B6HYZF.js.map
