@@ -119,11 +119,13 @@ const Changelog = () => {
       <div className="bg-white border-b border-gray-100 shadow-sm sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <div className="flex items-center justify-center">
-            <img
-              src={headerData.logo}
-              alt="Logo"
-              className="h-12 w-auto mr-3"
-            />
+            {headerData.logo && (
+              < img
+                src={headerData.logo}
+                alt="Logo"
+                className="h-12 w-auto mr-3"
+              />
+            )}
             <div className="flex flex-col">
               <h1 className="text-2xl font-semibold text-gray-900">
                 {
@@ -288,14 +290,16 @@ const Changelog = () => {
               </p>
             </div>
             <div className="flex items-center space-x-4">
-              <a
+              {
+              headerData.link && (<a
                 href={headerData.link}
                 className="text-sm text-blue-600 hover:text-blue-800 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Visit Website
-              </a>
+              </a>)
+              }
               <a
                 href="#"
                 className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
