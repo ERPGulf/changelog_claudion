@@ -40,7 +40,7 @@ const Changelog = () => {
         console.log('Fetching changelog for category:', category);
 
         const response = await axios.get(
-          'https://alw.erpgulf.com/api/method/changelog_claudion.changelog_claudion.api.log_claudion.changelog_claudion',
+          `/api/method/changelog_claudion.changelog_claudion.api.log_claudion.changelog_claudion`,
           {
             params: {
               category: category,
