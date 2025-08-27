@@ -269,4 +269,5 @@ website_route_rules = [
 
 fixtures = [
     {"dt": "Custom Field", "filters": {"module": "changelog_claudion"}},
+    {"dt": "Property Setter", "filters": {"module": "changelog_claudion"}},
 ]
