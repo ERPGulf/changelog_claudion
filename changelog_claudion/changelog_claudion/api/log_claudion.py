@@ -19,19 +19,7 @@ def changelog_claudion(category=None):
         werkzeug.wrappers.Response: JSON response containing changelog entries and category information.
     """
 
-    parsed_url = urlparse(frappe.utils.get_url())
-    # clean_base_url = urlunparse((parsed_url.scheme, parsed_url.hostname, "", "", "", ""))
-    # clean_base_url = f"{parsed_url.scheme}://{parsed_url.netloc}"
-    netloc = parsed_url.hostname
-    if parsed_url.port:
-        netloc += f":{parsed_url.port}"
-    clean_base_url = urlunparse((parsed_url.scheme, netloc, "", "", "", ""))
-
-
-
-
-
-
+    parsed_url = frappe.local.conf.host_name
 
     filters = {}
     if category:
@@ -93,8 +81,8 @@ def changelog_claudion(category=None):
                 "date": str(log.date),
                 "url": log.custom_url,
                 "description": log.custom_description_1,
-                "image": clean_base_url + log.image if log.image else "",
-                "video": clean_base_url + log.video if log.video else "",
+                "image": parsed_url + log.image if log.image else "",
+                "video": parsed_url + log.video if log.video else "",
                 "tags": [t["tags"] for t in tags],
                 "category": log.custom_category,
             }
@@ -103,7 +91,7 @@ def changelog_claudion(category=None):
     message = {
         "title": category_doc.get("title", "") if category_doc else "",
         "description": category_doc.get("custom_description_1", "") if category_doc else "",
-        "logo": clean_base_url + category_doc.get("logo", "") if category_doc and category_doc.get("logo") else "",
+        "logo": parsed_url + category_doc.get("logo", "") if category_doc and category_doc.get("logo") else "",
         "link": category_doc.get("link", "") if category_doc else "",
         "email": category_doc.get("email", "") if category_doc else "",
         "data": data,
