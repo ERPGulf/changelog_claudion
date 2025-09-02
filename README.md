@@ -49,7 +49,7 @@ A comprehensive changelog management system built for Frappe/ERPNext application
 
 ### Adding Changelog Entries
 
-1. Go to **Changelog List** in your Frappe desk
+1. Go to **Changelogs List** in your Frappe desk
 2. Create a new changelog entry with:
    - **Title**: Brief title of the change
    - **Date**: Release/change date
@@ -63,35 +63,9 @@ A comprehensive changelog management system built for Frappe/ERPNext application
 ### Viewing Changelogs
 
 **Public Access:**
+- Visit `https://your-site.com/logger` to display the changelog page, with changelogs for all your products displayed and can be accessed via selecting each product.
 
-- Visit `https://your-site.com/logger?category=your_category` to view the changelog.Make sure you enter the exact category name.
-
-## API Response Format
-
-```json
-{
-  "message": {
-    "title": "Your App Name",
-    "description": "App description",
-    "logo": "https://your-site.com/files/logo.png",
-    "link": "https://your-website.com",
-    "email": "contact@yourapp.com",
-    "data": [
-      {
-        "id": 1,
-        "title": "New Feature Release",
-        "date": "2025-01-15",
-        "url": "https://docs.yourapp.com/release-notes",
-        "description": "Added new dashboard features...",
-        "image": "https://your-site.com/files/screenshot.png",
-        "video": "https://your-site.com/files/demo.mp4",
-        "tags": ["new", "features"],
-        "category": "main"
-      }
-    ]
-  }
-}
-```
+- Visit `https://your-site.com/logger?category=enter_category_name` to view the changelog of a specific product.Make sure you enter the exact category name.
 
 ## Development
 
@@ -164,6 +138,6 @@ MIT License - see LICENSE file for details.
 
 - Create an issue on GitHub for bug reports
 - Check the Frappe documentation for general framework questions
-- Contact: rishikesh@htsqatar
+- Contact: rishikesh@htsqatar.com
 
 ---
