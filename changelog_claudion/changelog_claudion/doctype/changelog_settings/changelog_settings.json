@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:category",
  "creation": "2025-08-19 15:18:07.462253",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -25,7 +26,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Data",
+   "fieldtype": "Long Text",
    "label": "Description"
   },
   {
@@ -41,16 +42,18 @@
   {
    "fieldname": "category",
    "fieldtype": "Data",
-   "label": "Category"
+   "label": "Category",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-19 15:33:32.316193",
+ "modified": "2025-08-29 08:37:24.988330",
  "modified_by": "Administrator",
  "module": "changelog_claudion",
  "name": "Changelog Settings",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

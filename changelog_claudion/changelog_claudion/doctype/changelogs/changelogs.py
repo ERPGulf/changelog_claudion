@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class Changelog(Document):
+class Changelogs(Document):
 	pass

@@ -14,18 +14,19 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Tags",
-   "options": "security\nupdate\nperformance\noptimization\nbugfix\nmaintenance\nfeatures\nrelease\ninitial\nnew"
+   "options": "new\nbugfix\nsecurity\nupdate\nperformance\noptimisation\nmaintenance\nfeatures\ninitial"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-21 13:04:33.881920",
+ "modified": "2025-08-29 12:11:03.755576",
  "modified_by": "Administrator",
  "module": "changelog_claudion",
  "name": "log claudion child table",
  "owner": "Administrator",
  "permissions": [],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

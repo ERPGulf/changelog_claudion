@@ -23,21 +23,21 @@ def changelog_claudion(category=None):
 
     filters = {}
     if category:
-        filters["custom_category"] = category
+        filters["category"] = category
     else:
-        filters["custom_category"] = None
+        filters["category"] = None
 
     logs = frappe.get_all(
-        "Changelog",
+        "Changelogs",
         fields=[
             "name",
             "title",
             "date",
-            "custom_url",
-            "custom_description_1",
+            "changelog_url",
+            "description",
             "image",
             "video",
-            "custom_category",
+            "category",
         ],
         filters=filters,
         order_by="date DESC",
@@ -49,17 +49,22 @@ def changelog_claudion(category=None):
     if category:
         category_docs = frappe.get_all(
             "Changelog Settings",
-            fields=["name as title", "logo", "custom_description_1", "email", "link", "category"],
+            fields=["title", "logo", "description", "email", "link", "category"],
             filters={"category": category},
         )
         category_doc = category_docs[0] if category_docs else None
     else:
-         category_docs = frappe.get_all(
+        category_docs = frappe.get_all(
             "Changelog Settings",
-            fields=["name as title", "logo", "custom_description_1", "email", "link", "category"],
-            filters={"category":None},
+            fields=["title", "logo", "description", "email", "link", "category"],
         )
-         category_doc = category_docs[0] if category_docs else None
+        category_doc = category_docs[0] if category_docs else None
+
+        message = {
+            "category" : category_docs
+        }
+
+        return Response(json.dumps({"message": message}), status=200,mimetype="application/json")
 
 
     for log in logs:
@@ -70,7 +75,7 @@ def changelog_claudion(category=None):
 
         tags = frappe.get_all(
             "log claudion child table",
-            filters={"parent": log["name"], "parenttype": "Changelog"},
+            filters={"parent": log["name"], "parenttype": "Changelogs"},
             fields=["tags"],
         )
 
@@ -79,18 +84,18 @@ def changelog_claudion(category=None):
                 "id": log_id,
                 "title": log.title,
                 "date": str(log.date),
-                "url": log.custom_url,
-                "description": log.custom_description_1,
+                "url": log.changelog_url,
+                "description": log.description,
                 "image": parsed_url + log.image if log.image else "",
                 "video": parsed_url + log.video if log.video else "",
                 "tags": [t["tags"] for t in tags],
-                "category": log.custom_category,
+                "category": log.category,
             }
         )
 
     message = {
         "title": category_doc.get("title", "") if category_doc else "",
-        "description": category_doc.get("custom_description_1", "") if category_doc else "",
+        "description": category_doc.get("description", "") if category_doc else "",
         "logo": parsed_url + category_doc.get("logo", "") if category_doc and category_doc.get("logo") else "",
         "link": category_doc.get("link", "") if category_doc else "",
         "email": category_doc.get("email", "") if category_doc else "",

@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestChangelog(FrappeTestCase):
+class TestChangelogs(FrappeTestCase):
 	pass
