@@ -92,7 +92,7 @@ def changelog_claudion(category=None):
                 "video": parsed_url + log.video if log.video else "",
                 "tags": [t["tags"] for t in tags],
                 "category": log.category,
-                "published": log.published,
+                "published": bool(log.published),
                 "updated_by": log.updated_by
             }
         )
