@@ -10,6 +10,8 @@ interface ChangelogItem {
   video: string | null;
   tags: string[];
   category: string;
+  updated_by?: string;
+  published: boolean;
   url?: string;
 }
 
@@ -116,12 +118,13 @@ const Changelog = () => {
           email: response.data.message.email
         });
 
-        // Sort by date (newest first)
-        const sortedData = response.data.message.data
+        // Filter only published items and sort by date (newest first)
+        const publishedData = response.data.message.data
+          .filter((item: ChangelogItem) => item.published === true)
           .sort((a: ChangelogItem, b: ChangelogItem) =>
             new Date(b.date).getTime() - new Date(a.date).getTime()
           );
-        setData(sortedData);
+        setData(publishedData);
       } else {
         setData([]);
       }
