@@ -80,6 +80,8 @@ const Changelog = () => {
     } catch (err) {
       console.error('Error fetching categories:', err);
       setError('Failed to load categories. Please try again later.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -152,7 +154,7 @@ const Changelog = () => {
     }
   }, []);
 
-  if (loading && categories.length === 0) {
+  if (loading) {
     return (
       <div className="min-h-screen  flex items-center justify-center">
         <div className="text-center">
@@ -189,7 +191,7 @@ const Changelog = () => {
           <div className="flex items-center justify-between">
             <div>
               <h2 className="font-mono text-lg font-medium">Changleog</h2>
-              <h1 className="font-sans text-3xl font-medium">Whats New at {headerData.title}?</h1>
+              {headerData.title && <h1 className="font-sans text-3xl font-medium">Whats New at {headerData.title}?</h1>}
             </div>
             {headerData.logo && (
               <img
@@ -330,11 +332,11 @@ const Changelog = () => {
                         {/* Media */}
                         <div className="space-y-4">
                           {item.image && item.image !== '' && (
-                            <div className="rounded-lg overflow-hidden border border-gray-200">
+                            <div className="rounded-lg border border-gray-200">
                               <img
                                 src={item.image}
                                 alt={item.title}
-                                className="w-full max-w-md h-48 object-cover"
+                                className="w-full h-fit object-fit"
                                 onError={(e) => {
                                   const target = e.target as HTMLImageElement;
                                   target.style.display = 'none';
