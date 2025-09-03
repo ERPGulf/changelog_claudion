@@ -5,6 +5,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "published",
   "title",
   "date",
   "description",
@@ -12,7 +13,8 @@
   "category",
   "image",
   "video",
-  "tag"
+  "tag",
+  "updated_by"
  ],
  "fields": [
   {
@@ -33,7 +35,7 @@
   },
   {
    "fieldname": "date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Date"
   },
   {
@@ -56,12 +58,23 @@
    "fieldtype": "Table",
    "label": "Tag",
    "options": "log claudion child table"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "updated_by",
+   "fieldtype": "Data",
+   "label": "Updated By"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-28 12:38:23.184316",
+ "modified": "2025-09-03 13:32:24.158085",
  "modified_by": "Administrator",
  "module": "changelog_claudion",
  "name": "Changelogs",

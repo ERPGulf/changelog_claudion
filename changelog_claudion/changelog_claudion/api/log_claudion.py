@@ -38,6 +38,8 @@ def changelog_claudion(category=None):
             "image",
             "video",
             "category",
+            "published",
+            "updated_by"
         ],
         filters=filters,
         order_by="date DESC",
@@ -90,6 +92,8 @@ def changelog_claudion(category=None):
                 "video": parsed_url + log.video if log.video else "",
                 "tags": [t["tags"] for t in tags],
                 "category": log.category,
+                "published": log.published,
+                "updated_by": log.updated_by
             }
         )
 
