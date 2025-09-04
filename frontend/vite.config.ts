@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
     outDir:
-      "/opt/alw/frappe-bench/apps/changelog_claudion/changelog_claudion/public/frontend",
+      "../../changelog_claudion/changelog_claudion/public/frontend",
     emptyOutDir: true,
   },
 });
