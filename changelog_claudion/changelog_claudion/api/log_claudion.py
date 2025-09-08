@@ -39,7 +39,7 @@ def changelog_claudion(category=None):
             "video",
             "category",
             "published",
-            "updated_by"
+            "contributer"
         ],
         filters=filters,
         order_by="date DESC",
@@ -51,14 +51,14 @@ def changelog_claudion(category=None):
     if category:
         category_docs = frappe.get_all(
             "Changelog Settings",
-            fields=["title", "logo", "description", "email", "link", "category"],
+            fields=["title", "logo", "description", "email", "link", "category", "display_contributer"],
             filters={"category": category},
         )
         category_doc = category_docs[0] if category_docs else None
     else:
         category_docs = frappe.get_all(
             "Changelog Settings",
-            fields=["title", "logo", "description", "email", "link", "category"],
+            fields=["title", "logo", "description", "email", "link", "category", "display_contributer"],
         )
         category_doc = category_docs[0] if category_docs else None
 
@@ -93,7 +93,7 @@ def changelog_claudion(category=None):
                 "tags": [t["tags"] for t in tags],
                 "category": log.category,
                 "published": bool(log.published),
-                "updated_by": log.updated_by
+                "contributer": log.contributer if log.contributer else ""
             }
         )
 
@@ -103,6 +103,7 @@ def changelog_claudion(category=None):
         "logo": parsed_url + category_doc.get("logo", "") if category_doc and category_doc.get("logo") else "",
         "link": category_doc.get("link", "") if category_doc else "",
         "email": category_doc.get("email", "") if category_doc else "",
+        "display_contributer": bool( category_doc.get("display_contributer", "")) if category_doc else "",
         "data": data,
     }
 

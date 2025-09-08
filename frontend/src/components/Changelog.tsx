@@ -13,6 +13,7 @@ interface ChangelogItem {
   updated_by?: string;
   published: boolean;
   url?: string;
+  contributer: string;
 }
 
 interface Category {
@@ -38,6 +39,7 @@ const Changelog = () => {
     logo: "",
     link: ""
   });
+  const [displayContributer, setDisplayContributer] = useState(false)
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -117,6 +119,8 @@ const Changelog = () => {
           link: response.data.message.link,
           email: response.data.message.email
         });
+
+        setDisplayContributer(response.data.message.display_contributer)
 
         // Filter only published items and sort by date (newest first)
         const publishedData = response.data.message.data
@@ -323,6 +327,13 @@ const Changelog = () => {
                                 {tag}
                               </span>
                             ))}
+                            {(displayContributer && item.contributer !== "") && 
+                            (<span
+                             className="px-3 py-1 border rounded-full text-xs font-light border text-black bg-gray-100">
+                              {item.contributer}
+                              </span>)
+                            }
+
                           </div>
                         </div>
 
